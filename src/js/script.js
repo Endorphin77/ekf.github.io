@@ -72,6 +72,18 @@ toggleSearch('.header__button');
 toggleSearch('.search__close');
 toggleSearch('.search__close-box');
 
+function toggleMobileMenu(item) {
+  $(item).each(function(i) {
+      $(this).on('click', function(e) {
+          e.preventDefault();
+          $('.mobile-menu').eq(i).toggleClass('mobile-menu_active');
+      })
+  });
+};
+
+toggleMobileMenu('.hamburger');
+toggleMobileMenu('.mobile-menu__close-box');
+
 
     window.addEventListener('DOMContentLoaded', () => {
       const menu = document.querySelector('.menu'),

@@ -13,10 +13,16 @@
         border-bottom: 1px solid #ccc;
         color: #515151; 
     }
+    &__top-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
     &__left-crumb {
         display: flex;
         align-items: center;
         list-style: none;
+        padding-left: 0;
         & li {
             & a {
                 display: block;
