@@ -3,15 +3,15 @@
     &__desc {
         padding: 10px;
         &-title {
-            border-left: 3px solid #f78912;
+            border-left: 3px solid $main-color;
             padding: 0 10px 0 10px;
-            color: #2A3F76;
+            color: $title-color;
             font-size: 27px;
             line-height: 1.1em;
             font-weight: 400;
         }
         &-text {
-            color: #A1A1A1;
+            color: $text-color;
             line-height: 1.3em;
             text-align: justify;
         }
