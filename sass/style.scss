@@ -1,15 +1,16 @@
+@import 'colors.scss';
 @import 'fonts.scss';
 ::-moz-selection{
     color: #fff;
-    background-color: #f78912;
+    background-color: $main-color;
 }
 ::selection{
     color: #fff;
-    background-color: #f78912;
+    background-color: $main-color;
 }
 ::-webkit-selection {
     color: #fff;
-    background-color: #f78912;
+    background-color: $main-color;
 }
 
 html {
@@ -31,6 +32,12 @@ html {
 @import 'media.scss';
 @import 'search.scss';
 @import 'mobile-menu.scss';
+@import 'catalog.scss';
+@import 'titles.scss';
+
+
+
+
 
 
 

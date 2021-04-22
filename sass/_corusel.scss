@@ -74,7 +74,7 @@
         .slick-active {
             button {
                 
-                border: 2px #f78912 solid;
+                border: 2px $main-color solid;
             }
             
         }
@@ -89,12 +89,6 @@
         .corusel__title {
             border-top: 1px solid #ddd;
             &-text {
-                border-left: 3px solid #f78912;
-                padding: 0 10px 0 10px;
-                color: #2A3F76;
-                font-size: 27px;
-                line-height: 1.1em;
-                font-weight: 400;
                 margin-top: 30px;
             }
         }
@@ -127,16 +121,10 @@
                         }
                     }
                     .corusel__product-title {
-                        border-left: 3px solid #f78912;
-                        padding: 0 10px 0 10px;
-                        color: #2A3F76;
-                        font-size: 21px;
-                        line-height: 1.1em;
-                        font-weight: 400;
                         margin-top: 10px;
                     }
                     .corusel__product-desc {
-                        color: #999999;
+                        color: $text-color;
                         text-align: justify;
                         font-size: 15px;
                         line-height: 1.25em;
@@ -155,7 +143,7 @@
             justify-content: center;
             align-items: center;
             border: none;
-            background-color: #999999;
+            background-color: $text-color;
             position: absolute;
             opacity: 0.5;
             top: -42px;

@@ -1,13 +1,7 @@
 .assortment {
-    color: #A1A1A1;
+    color: $text-color;
     line-height: 1.3em;
     &__title-main {
-        border-left: 3px solid #f78912;
-        padding: 0 10px 0 10px;
-        color: #2A3F76;
-        font-size: 27px;
-        line-height: 1.1em;
-        font-weight: 400;
         margin-top: 30px;
     }
     &__desc {
@@ -26,12 +20,6 @@
         height: auto;
     }
     &__content-title {
-        border-left: 3px solid #f78912;
-        padding: 0 10px 0 10px;
-        color: #2A3F76;
-        font-size: 21px;
-        line-height: 1.1em;
-        font-weight: 400;
         margin-top: 5px;
     }
     &__text {

@@ -65,7 +65,7 @@
             padding: 0 7px 0 7px;
             text-decoration: none;
             color: #fff;
-            background-color: #f78912;
+            background-color: $main-color;
             margin-right: 7px;
             display: flex;
             align-items: center;
@@ -79,7 +79,7 @@
             background-color: #dddddd;
             border: none;
             line-height: 28px;
-            color: #f78912;
+            color: $main-color;
             transition: 0.5s all;
             &:hover {
                 color: #e78419;
@@ -90,9 +90,9 @@
         display: none;
         a {
             background-color: #ddd;
-            color: #f78912;
+            color: $main-color;
             &:hover {
-                color: #f78912;
+                color: $main-color;
                 background-color: #ddd;
             }
         }
@@ -131,13 +131,13 @@
                     justify-content: center;
                     flex-direction: column;
                     &:hover {
-                        color: #f78912;
+                        color: $main-color;
                     }
                     &:after {
                         content: '';
                         height: 2px;
                         width: 0px;
-                        background-color: #f78912;
+                        background-color: $main-color;
                         transition: 0.3s all;
                         bottom: 0;
                     }
@@ -157,7 +157,7 @@
                         z-index: 1;
                         top: 10px;
                         transition: 0.3s all;
-                        border-top: 2px solid #f78912;
+                        border-top: 2px solid $main-color;
                         & a {
                             padding: 12px 0px;
                         }

@@ -89,6 +89,9 @@
             width: 200px;
         }
     }
+    .promo__main-description {
+        line-height: 1.2em;
+    }
 }
 
 
@@ -117,6 +120,17 @@
         }
     }  
     
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .header__logo {
+        img {
+         width: 290px; 
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -180,4 +194,18 @@
     .header__button_tel {
         display: block;
     }
+}
+
+@media (max-width: 332px) {
+   .header__logo {
+       width: 220px;
+       img {
+        width: 220px; 
+       }
+   }
+   .corusel_products {
+    .corusel__title-text {
+        font-size: 25px;
+    }
+   }
 }
