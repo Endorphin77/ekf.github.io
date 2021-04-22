@@ -1,15 +1,6 @@
 .promo {
     &__title {
         margin-top: 25px;
-        
-        &-main {
-            border-left: 3px solid $main-color;
-            padding: 0 10px 0 10px;
-            color: $title-color;
-            font-size: 30px;
-            line-height: 1.1em;
-            font-weight: 400;
-        }
         & hr {
             box-sizing: content-box;
             border: 0;
