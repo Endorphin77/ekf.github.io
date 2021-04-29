@@ -13,6 +13,9 @@
             color: $main-color;
         }   
     }
+    & p {
+        margin-bottom: 5px;
+    }
     &__boxes {
         display: flex;
         margin-top: 30px;
@@ -37,7 +40,7 @@
         }
     }
     &__crumbs, &__copyright {
-        margin-top: 15px;
+        margin-top: 30px;
         text-align: center;
     }
     &__copyright {
