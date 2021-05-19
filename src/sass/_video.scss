@@ -1,0 +1,54 @@
+.video {
+    &__player {
+        padding-top: 25px;
+        width: 80%;
+        height: 365px;
+        display: block;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        .title {
+            margin-top: 15px;
+        }
+    }
+    &__docks {
+        width: 100%;
+        margin: 25px auto;
+        border: 3px dotted $main-color;
+        padding: 10px;
+    }
+    &__dock {
+        display: flex;
+        flex-direction: column;
+        color: $text-color;
+        text-decoration: none;
+        transition: 0.3s all;
+        &:hover {
+            text-decoration: none;
+            color: $main-color;
+        }
+        &-title {
+            font-size: 19px;
+            padding-bottom: 10px;
+            font-weight: 600;
+            color: $title-color;
+        }
+        img {
+            height: 25px;
+        }
+        span {
+            display: inline-block;
+            font-weight: 600;
+            color: #fff;
+            width: 85px;
+            text-align: center;
+            border-radius: 7px;
+            background-color: $main-color;
+        }
+        h4 {
+            display: inline;
+            font-size: 18px;
+        }
+    }
+}

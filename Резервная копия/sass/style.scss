@@ -1,0 +1,43 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+::-moz-selection{
+    color: #fff;
+    background-color: $main-color;
+}
+::selection{
+    color: #fff;
+    background-color: $main-color;
+}
+::-webkit-selection {
+    color: #fff;
+    background-color: $main-color;
+}
+
+html {
+    font-family: 'Roboto';
+}
+
+
+@import 'hamburger.scss';
+@import 'tell.scss';
+@import 'header.scss';
+@import 'corusel.scss';
+@import 'marquee.scss';
+@import 'promo.scss';
+@import 'main-btn.scss';
+@import 'attention.scss';
+@import 'assortment.scss';
+@import 'guidelines.scss';
+@import 'footer.scss';
+@import 'media.scss';
+@import 'search.scss';
+@import 'mobile-menu.scss';
+@import 'catalog.scss';
+@import 'titles.scss';
+
+
+
+
+
+
+

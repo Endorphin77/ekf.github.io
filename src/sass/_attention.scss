@@ -1,0 +1,28 @@
+.attention {
+    margin-top: 20px;
+    &__text {
+        text-align: center;
+        padding: 30px 0 30px 0;
+        font-size: 23px;
+        font-weight: 500;
+    }
+    &__row {
+        border-top: 3px dotted $main-color;
+        border-bottom: 3px dotted $main-color;
+        padding: 15px 0 15px 15px;
+        font-size: 19px;
+        font-weight: 500;
+    }
+    &__work-schedule {
+        color: $main-color;
+    }
+    &__work-text {
+        font-size: 15px;
+        color: $text-color;
+    }
+    &_specif {
+        .container {
+            padding: 0;
+        }
+    }
+}

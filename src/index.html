@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EKF</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="hamburger hamburger_main">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="tell tell_main">
+        <a href="tel: +74954119167"><i class="bi bi-telephone-fill"></i></a>
+    </div>
+    <div class="search">
+        <div class="search__close-box"></div>
+        <div class="container">
+            <div class="row">
+                <div class="search__row">
+                    <div class="search__close"><i class="bi bi-x"></i></div>
+                    <form action="#" id="search__form-id" class="search__form">
+                        <input name="request" required placeholder="Что будем искать?" type="text">
+                        <button class="search__button"><i class="icon-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="preview" id="preview">
+        <canvas id="bubbles">
+            
+        </canvas>
+        <div class="preview__desc">
+            <img src="img/logo-big.png" alt="">
+            <div class="preview__h2">Продажа медицинского оборудования для лабораторий</div>
+            <a href="#header__go"><i class="bi bi-arrow-down-square-fill"></i></a>
+        </div>
+    </section>
+
+    <div id="header__go"></div>
+    <header class="header header_main">
+        <div class="header__crumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="header__top-container">
+                        <ul class="header__left-crumb col-md-5">
+                            <li><a href="#" class="icon-twitter"></a></li>
+                            <li><a href="#" class="icon-facebook"></a></li>
+                            <li><a href="#" class="icon-google"></a></li>
+                            <li><a href="#" class="icon-vk"></a></li>
+                            <li><a href="#" class="icon-youtube"></a></li>
+                        </ul>
+
+                        <div class="header__right-crumb col-md-5">
+                            <a href="catalog.html">Интернет-каталог</a>
+                            <div class="header__button">
+                                <button><i class="icon-search"></i></button>
+                            </div>
+                            <div class="header__button header__button_tel">
+                                <a href="tel: +74954119167"><i class="bi bi-telephone-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="header__top-nav header__top-nav_main">
+            <div class="container">
+                <div class="row">
+                    
+                    <nav class="header__nav col-md-4 header__nav_left">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li class="header__dropdown">
+                                <a href="#">Наши приборы</a>
+                                <ul class="header__dropdown-content">
+                                    <li><a class="" href="biosen.html">BIOSEN_C line</a></li>
+                                    <li><a class="" href="#">Quo-Lab</a></li>
+                                    <li><a class="" href="#">Quo-Test</a></li>
+                                    <li><a class="" href="#">Hemo Control</a></li>
+                                    <li><a class="" href="#">Lactate Scout 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__logo col-md-4">
+                        <a href="index.html"><img src="img/logo-ru.png" alt="logo-ru"></a>
+                    </div>
+                    <nav class="header__nav col-md-4"> 
+                        <ul>
+                            <li><a href="#">Сервис</a></li>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu__close-box"></div>
+        <div class="mobile-menu__container">
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li class="mobile-menu__dropdown">
+                    <a href="#">Наши приборы</a>
+                    <div class="mobile-menu__plus"><span>+</span></div>
+                    <ul class="mobile-menu__dropdown-content">
+                        <li><a class="" href="biosen.html">BIOSEN_C line</a></li>
+                        <li><a class="" href="#">Quo-Lab</a></li>
+                        <li><a class="" href="#">Quo-Test</a></li>
+                        <li><a class="" href="#">Hemo Control</a></li>
+                        <li><a class="" href="#">Lactate Scout 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Сервис</a></li>
+                <li><a href="#">Документы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="corusel corusel_main">
+        <div class="container">
+            <div class="row">
+                <div class="corusel__wrapper corusel__wrapper_main">
+                    <div><a href="a"><img src="img/c2ag_2500x729_3_Hemo-Control-Hemoglobin-Analyzer-1.jpg"
+                                alt="polar"></a></div>
+                    <div><a href="b"><img src="img/EKF Diagnostics - about us.jpg" alt="polar"></a></div>
+                    <div><a href="c"><img src="img/PrimeStore Molecular viral transport media.jpg" alt="polar"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="marquee">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><a class="marquee__href" href="#">Пследние новости</a></div>
+                <div class="col-md-10"><a href="#" class="marquee__text">
+                        <marquee>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p><span>&nbsp||&nbsp</span>
+                            <p> sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><span>&nbsp||&nbsp</span>
+                            <p> Ut enim ad minim veniam, quis
+                                nostrud exercitation</p><span>&nbsp||&nbsp</span>
+                            <p> ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </marquee>
+                    </a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo">
+        <div class="container">
+            <div class="row">
+                <div class="promo__title col-12">
+                    <h1 class="title title_xl">«ЕКФ-диагностика» основана в 2004 году</h1>
+                    <hr>
+                </div>
+
+                <div class="promo__description col-md-8">
+                    <div class="promo__main-description">
+                        Как эксклюзивный представитель компании EKF - diagnostic
+                        GmbH(Германия) производителя медицинского оборудования – автоматических анализаторов глюкозы и
+                        лактата (Biosen), гемоглобина и гематокрита (HemoControl), лактата (LactateScout) и расходных
+                        материалов.
+                    </div>
+                    <div class="promo__low-description">
+                        EKF diagnostic - глобальный производитель медицинского
+                        оборудования для стационарных и центральных лабораторий, а также химических реагентов, включая
+                        тесты на гемоглобин, HbA1c, тесты на глюкозу и лактат.
+                    </div>
+                    <div class="promo__low-description">Авторитетность компании EKF - diagnostic GmbH подтверждается
+                        популярностью производимой продукции на мировом рынке уже более 25 лет. Данная нам авторизация
+                        распространяется на сферы продаж, обеспечения реактивами и расходным материалом, сервисное
+                        обслуживание и ремонт, а также позволяет участвовать в публичных или частных тендерах и
+                        уполномочивать от своего имени другие компании. Компания «ЕКФ-диагностика» предлагает гибкую
+                        структуру отношений, как с конечным потребителем, так и с торгующими организациями.
+                    </div>
+                </div>
+                <div class="promo__right col-md-4">
+                    <div class="promo__sitelinks">
+                        <div class="col-md-12 title title_l promo__title-main_sitelink">Быстрые ссылки</div>
+                        <div class="promo__sitelinks-row">
+                            <div class="col-md-6 promo__sitelinks-link"><a href="#">Quo-Labtm<sup>tm</sup></a></div>
+                            <div class="col-md-6 promo__sitelinks-link"><a href="#">Quo-Test<sup>tm</sup></a></div>
+                            <div class="col-md-6 promo__sitelinks-link"><a href="#">Lactate Scout 4<sup>tm</sup></a></div>
+                            <div class="col-md-6 promo__sitelinks-link"><a href="#">Hemo Control</a></div>
+                            <div class="col-md-6 promo__sitelinks-link"><a href="#">Lactate Scout 4</a></div>
+                            <div class="col-md-6 promo__sitelinks-link"><a href="biosen.html">Biosen C-Line</a></div>
+                        </div>
+                    </div>
+                    <div class="main-btn main-btn_promo">
+                        <a href="#">Узнать больше &nbsp
+                            <i class="bi bi-forward-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="attention">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="attention__row">
+                        <div class="attention__work-schedule">
+                            График работы:
+                        </div>
+                        <div class="attention__work-text">
+                            Мы работаем с 9.00 до 17.00 с понедельника по четверг.
+                        </div>
+                        <div class="attention__work-text">
+                            По пятницам мы работаем с 9.00 до 15.00.
+                        </div>
+                        <div class="attention__work-schedule">
+                            График работы склада:
+                        </div>
+                        <div class="attention__work-text">
+                            Отгрузка товаров производится с 9.00 до 16.00 часов с понедельника по четверг.
+                        </div>
+                        <div class="attention__work-text">
+                            По пятницам отгрузка товаров производится с 9.00 до 15.00.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="corusel corusel_products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="corusel__title">
+                        <div class="title title_l corusel__title-text">Наши продукты</div>
+                    </div>
+                    <div class="corusel__wrapper-products">
+                        <div class="corusel__wrapper-product col-md-4">
+                            <div class="corusel__wrapper-row">
+                                <a href="#" class="corusel_products-link">
+                                    <img src="img/Product-image-QuoLab.jpg" alt="QuoLab">
+                                    <div class="title title_m corusel__product-title">
+                                        Quo-Lab® HbA1c Analyzer
+                                    </div>
+                                    <div class="corusel__product-desc">
+                                        Quo-Lab ® HbA1c - это полуавтоматический настольный анализатор в месте оказания
+                                        медицинской помощи для измерения гликированного гемоглобина (HbA1c).
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="corusel__wrapper-product col-md-4">
+                            <div class="corusel__wrapper-row">
+                                <a href="#" class="corusel_products-link">
+                                    <img src="img/Product-image-QuoTest.jpg" alt="QuoTest">
+                                    <div class="title title_m corusel__product-title">
+                                        Quo-Test® HbA1c Analyzer
+                                    </div>
+                                    <div class="corusel__product-desc">
+                                        Quo-Test ® представляет собой полностью автоматизированный рабочий стол
+                                        пункт-уход анализатор предназначен для легкого и надежного измерения HbA1c для
+                                        контроля и управления диабетом
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="corusel__wrapper-product col-md-4">
+                            <div class="corusel__wrapper-row">
+                                <a href="#" class="corusel_products-link">
+                                    <img src="img/Product-image-HemoControl.jpg" alt="HemoControl">
+                                    <div class="title title_m corusel__product-title">
+                                        Hemo Control
+                                    </div>
+                                    <div class="corusel__product-desc">
+                                        Hemo Control от EKF Diagnostics - это анализатор гемоглобина на месте,
+                                        предназначенный для получения количественных результатов лабораторного качества
+                                        за 25 секунд.
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="corusel__wrapper-product col-md-4">
+                            <div class="corusel__wrapper-row">
+                                <a href="#" class="corusel_products-link">
+                                    <img src="img/Product-image-biosen.jpg" alt="biosen-c">
+                                    <div class="title title_m corusel__product-title">
+                                        Biosen C-Line
+                                    </div>
+                                    <div class="corusel__product-desc">
+                                        Biosen может тестировать кровь, плазму или сыворотку для получения значений
+                                        глюкозы и лактата с превосходной точностью (менее 2% CV) в широком диапазоне
+                                        измерений.
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="corusel__wrapper-product col-md-4">
+                            <div class="corusel__wrapper-row">
+                                <a href="#" class="corusel_products-link">
+                                    <img src="img/Lactate-Scout-4-Lactate-Analyzer-Athletes.jfif" alt="biosen-c">
+                                    <div class="title title_m corusel__product-title">
+                                        Lactate Scout 4
+                                    </div>
+                                    <div class="corusel__product-desc">
+                                        Простой, точный и надежный анализатор лактата для мониторинга спортивных результатов.
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="assortment">
+        <div class="container">
+            <div class="row">
+                <div class="assortment__title col-12">
+                    <h2 class="title title_l assortment__title-main">Наш фокус и ассортимент</h2>
+                    <hr>
+                </div>
+                <div class="assortment__desc col-12">
+                    <p>
+                        EKF - ведущий производитель диагностических приборов и центральных лабораторных анализов для
+                        стационаров, предлагающий анализаторы гемоглобина, гематокрита, HbA1c, глюкозы
+                        и лактата, которые регулярно используются в более чем 100 странах.
+                    </p>
+                </div>
+                <div class="assortment__content col-12">
+                    <div class="col-md-6 assortment__text-box">
+                        <div class="assortment__content-title title title_m">
+                            Анализаторы диабета и HbA1c
+                        </div>
+                        <div class="assortment__text">
+                            Линейка анализаторов HbA1c и глюкозы EKF обеспечивает быстрые и надежные результаты, которые
+                            предоставляют как практикующим диабетикам, так и пациентам информацию, необходимую им для
+                            принятия клинических решений или решений, касающихся образа жизни, за считанные минуты.
+                        </div>
+                    </div>
+                    <div class="col-md-6 assortment__text-box">
+                        <div class="assortment__content-title title title_m">
+                            Спортивное выступление
+                        </div>
+                        <div class="assortment__text">
+                            Тренируйтесь как лучшие. Отслеживайте результаты спортсменов с течением времени с помощью
+                            регулярных тестов на лактат с помощью Lactate Scout 4 и Biosen C-Line . Используется
+                            ведущими спортивными институтами и всемирно известными футбольными клубами по всей Европе.
+                        </div>
+                    </div>
+                    <div class="col-md-6 assortment__text-box">
+                        <div class="assortment__content-title title title_m">
+                            Анализаторы гемоглобина
+                        </div>
+                        <div class="assortment__text">
+                            EKF предлагает широкий спектр анализаторов гемоглобина и гематокрита, которые предоставляют
+                            врачам, специалистам из банков крови, а также диетическим и педиатрическим медсестрам
+                            быстрые и точные результаты, на которые они могут положиться. Выбирайте между анализаторами
+                            с различной методологией измерения, функциями и вариантами подключения в соответствии с
+                            вашим бюджетом и требованиями.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--div class="attention">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="attention__text">
+                        За 25 лет с момента основания EKF из скромной электротехнической компании выросла в
+                        международный, котирующийся на фондовой бирже, медицинский технологический бизнес.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="guidelines">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 guidelines__desc">
+                    <div class="title title_l">
+                        Прочтите наши руководства
+
+                    </div>
+                    <hr>
+                    <div class="guidelines__desc-text">
+                        <p>Мы написали серию руководств, чтобы помочь медицинским работникам больше узнать о
+                            тестировании на анемию, диабет, кетоз и измерении лактата в местах оказания медицинской
+                            помощи.</p>
+                        <p>Узнайте больше о различных методах тестирования, симптомах, связанных состояниях и поймите,
+                            как POCT может помочь получить точные результаты за считанные минуты.</p>
+                    </div>
+                    <div class="guidelines__desc-logo">
+                        <img src="img/logo-ru.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-8 guidelines__img">
+                    <a href="#"><img src="img/EKF-Educational-Guides.jpg" alt="Guides"></a>
+                </div>
+            </div>
+        </div>
+    </section-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footer__boxes">
+                    <div class="col-md-3">
+                        <div class="title title_m">
+                            Быстрые ссылки
+                        </div>
+                        <div class="footer__boxes-links">
+                            <a class="" href="biosen.html">BIOSEN_C line</a>
+                            <a class="" href="#">Quo-Lab</a>
+                            <a class="" href="#">Quo-Test</a>
+                            <a class="" href="#">Hemo Control</a>
+                            <a class="" href="#">Lactate Scout 4</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title title_m">
+                            Служба поддержки
+                        </div>
+                        <div class="footer__boxes-links">
+                            <a href="#">Карта сайта</a>
+                            <a href="#">Сервис</a>
+                            <a href="#">Свяжитесь с нами</a>
+                            <a href="#">Как добраться</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title title_m">
+                            Мы на связи
+                        </div>
+                        <div class="footer__boxes-links">
+                            <p><i class="bi bi-flag-fill"></i> Адрес: 117648, Москва, Северное
+                                Чертаново, дом 2, корпус 207.</p>
+                            <p><i class="bi bi-telephone-fill"></i> Телефон: +7 495 411 91 67</p>
+                            <p><i class="bi bi-envelope-fill"></i> Email: info@ekf.ru</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer__boxes-logo">
+                        <img src="img/logo-ru-white.png" alt="">
+                        <div class="footer__boxes-text">
+                            Обратите внимание: НЕОБХОДИМ ТЕКСТ ДЛЯ СОХРАНЕНИЯ ЦЕЛОСТНОСТИ ДИЗАЙНА.
+                        </div>
+                    </div>
+                </div>
+                <img src="img/logo-ru-white.png" alt="" class="footer__mobile-logo">
+                <!--div class="footer__crumbs">
+                    <a href="#">Конфиденциальность</a> |
+                    <a href="#">Положения и условия</a> |
+                    <a href="#">Условия продажи</a> |
+                    <a href="#">Закон Великобритании о современном рабстве</a>
+                </div-->
+                <div class="footer__copyright">
+                    ЕКФ Диагностика | Продажа медицинского оборудования для лабораторий, Москва 2021
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bubbles.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
