@@ -3,6 +3,9 @@
     .video__player {
         height: 317px;
     }
+    .devices__row {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -365,6 +368,9 @@
         width: 100%;
         height: 229px;
     }
+    .devices__dev-cont {
+        width: 95%;
+    }
 }
 
 @media (max-width: 332px) {
@@ -375,11 +381,16 @@
        }
    }
    .corusel_products {
-    .corusel__title-text {
-        font-size: 25px;
-    }
+        .corusel__title-text {
+            font-size: 25px;
+        }
    }
    .video__player {
-    height: 181px;
-}
+        height: 181px;
+    }
+    .devices__img {
+        img {
+            width: 100%;
+        }
+    }   
 }

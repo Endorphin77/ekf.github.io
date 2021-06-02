@@ -1,4 +1,9 @@
 .promo {
+    position: relative;
+    &__anchor {
+        position: absolute;
+        top: -90px;
+    }
     &__title {
         margin-top: 25px;
         & hr {
@@ -10,9 +15,7 @@
     }
     
     &__description {
-        
         color: $text-color;
-        
         text-align: justify;
     }
     &__main-description {

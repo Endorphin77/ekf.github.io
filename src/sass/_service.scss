@@ -1,0 +1,16 @@
+.service {
+    &__main-title {
+        margin-top: 150px;
+    }
+    hr {
+        margin-top: 15px;
+    }
+    &__blocks-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__block {
+        padding: 15px;
+        margin-top: 10px;
+    }
+}

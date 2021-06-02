@@ -31,4 +31,10 @@
     &_docks {
         width: 100%;
     }
+    &_devices {
+        a {
+            justify-content: center;
+            padding: 0;
+        }
+    }
 }
