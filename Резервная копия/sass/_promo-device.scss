@@ -1,0 +1,99 @@
+.device {
+    padding-top: 143px;
+    hr {
+        margin: 20px 0 30px 0;
+    }
+    &__top {
+        padding: 0 30px 0 30px;
+        .title_m {
+            line-height: 33px;
+        }
+    }
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+    &__features {
+        font-size: 15px;
+        font-weight: 400;
+        position: relative;
+        width: 100%;
+        padding: 0 40px 0 30px;
+        color: $title-color;
+        text-align: justify;
+        p{
+            margin-bottom: 9px;
+        }
+        span {
+            position: absolute;
+            left: 5px;
+            color: $main-color;
+        }
+    }
+    &__manual {
+        margin-top: 30px;
+        &-title {
+            margin-top: 10px;
+        }
+    }
+    &__desc {
+        display: flex;
+        flex-wrap: wrap;
+        &-row {
+            padding: 0 30px 0 30px;
+            &:nth-child(1) {
+                border-right: 1px solid #ccc;
+            }
+        }
+        &-text {
+            color: $text-color;
+            padding-bottom: 10px;
+            text-align: justify;
+        }
+    }
+    &__manual-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__manual-box {
+        padding: 0 15px 0 15px;
+        position: relative;
+        p {
+            color: $text-color;
+            margin: 0;
+            font-size: 25px;
+            font-weight: 500;
+            span {
+                color: $main-color;
+                font-weight: 700;
+            }
+        }
+        img {
+            width: 100%;
+            border-bottom: 5px solid $main-color;
+        }
+    }
+    &__models {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }   
+    &__model {
+        // border: 3px dotted $main-color;
+        &-title {
+            margin: 20px 30px 20px 5%;
+        }
+        hr {
+            width: 90%;
+            margin: 0 auto;
+            height: 0;
+            color: #fff;
+            border-bottom: 3px dotted $main-color;
+            opacity: 1;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
