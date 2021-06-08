@@ -1,0 +1,39 @@
+.service {
+    &__main-title {
+        margin-top: 150px;
+    }
+    hr {
+        margin-top: 15px;
+    }
+    &__blocks-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__block {
+        padding: 15px;
+        margin-top: 10px;
+    }
+    &__licenses {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        img {
+            width: 250px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__license {
+        padding-bottom: 15px;
+        &-title {
+            width: 250px;
+            margin: 0 auto;
+            padding-bottom: 15px;
+            font-size: 18px;
+            
+        }
+    }
+    
+}
