@@ -1,0 +1,45 @@
+.message {
+    position: relative;
+    &__anchor {
+        position: absolute;
+        top: -90px;
+    }
+    &__title {
+        margin-top: 5px;
+    }
+    &__row {
+        margin-top: 15px;
+        &-item {
+            padding: 15px;
+        }
+        label {
+            padding-left: 15px;
+        }
+    }
+    &__row-item {
+        &_check {
+            display: flex;
+            align-items: center;
+        } 
+        &_btn {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &__form-item {
+        background-color: #fff;
+        border: 2px dotted $main-color;
+        outline: none !important;
+        outline-offset: 0 !important;
+        &:active {
+            border: 2px solid $main-color;
+            outline: none !important;
+            outline-offset: 0 !important;
+        }
+        &:focus {
+            border: 2px solid $main-color;
+            outline: none !important;
+            outline-offset: 0 !important;
+        }
+    }
+}

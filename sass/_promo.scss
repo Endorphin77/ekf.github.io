@@ -44,6 +44,10 @@
                 margin-right: 5px;
                 text-decoration: none;
                 color: $main-color;
+                transition: 0.3s all;
+                &:hover {
+                    color: #af5a00;
+                }
             }
         }
     }

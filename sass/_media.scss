@@ -1,4 +1,22 @@
 
+
+
+@media (min-width: 2000px) {
+    .corusel__wrapper_main {
+        img {
+            max-height: 800px !important;
+        }
+    } 
+}
+
+@media (min-width: 2400px) {
+    .corusel__wrapper_main {
+        img {
+            max-height: 900px !important;
+        }
+    } 
+}
+
 @media (max-width: 1400px) {
     .video__player {
         height: 317px;
@@ -204,6 +222,9 @@
             height: 300px;
         }
     }
+    .message__row-item_btn {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 700px) {
@@ -341,6 +362,12 @@
         iframe {
             height: 200px;
         }
+    }
+    .corusel {
+        display: none;
+    }
+    .promo {
+        margin-top: 90px;
     }
 }
 

@@ -13,6 +13,10 @@
     background-color: $main-color;
 }
 
+* {
+    outline:none;
+}
+
 html {
     font-family: 'Roboto';
     
@@ -55,6 +59,7 @@ body,html {
 @import 'devices';
 @import 'service';
 @import 'location';
+@import 'message.scss';
 @import 'media.scss';
 
 
