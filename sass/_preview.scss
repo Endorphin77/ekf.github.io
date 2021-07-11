@@ -1,0 +1,75 @@
+.preview {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    &__desc {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+            width: 900px;
+        }
+    }
+    &__h2 {
+        margin-top: 10px;
+        color: $text-color;
+        font-size: 30px;
+    }
+    a {
+        color: $main-color;
+        font-size: 50px;
+        margin-top: 30px;
+        -o-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -webkit-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        animation: updown 1.5s linear infinite;
+    }
+    @keyframes updown {
+        0% {
+        transform: translateY(-7px);
+        -o-transform: translateY(-7px);
+        -ms-transform: translateY(-7px);
+        -moz-transform: translateY(-7px);
+        -webkit-transform: translateY(-7px);
+        }
+        50% {
+            transform: translateY(7px);
+            -o-transform: translateY(7px);
+            -ms-transform: translateY(7px);
+            -moz-transform: translateY(7px);
+            -webkit-transform: translateY(7px);
+        }
+        100% {
+            transform: translateY(-7px);
+            -o-transform: translateY(-7px);
+            -ms-transform: translateY(-7px);
+            -moz-transform: translateY(-7px);
+            -webkit-transform: translateY(-7px);
+        }
+    }
+}
+
+#bubbles {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+#lines { 
+    background:#f78912;
+    width:100%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#lines:hover { 
+background:#f78912;
+}

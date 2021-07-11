@@ -1,0 +1,74 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+::-moz-selection{
+    color: #fff;
+    background-color: $main-color;
+}
+::selection{
+    color: #fff;
+    background-color: $main-color;
+}
+::-webkit-selection {
+    color: #fff;
+    background-color: $main-color;
+}
+
+* {
+    outline:none;
+}
+
+html {
+    font-family: 'Roboto';
+    
+}
+
+body,html {
+    height:100%;
+  }
+
+  .anchor-row {
+      position: relative;
+  }
+
+  .anchor {
+    position: absolute;
+    top: -90px;
+  }
+
+
+@import 'hamburger.scss';
+@import 'tell.scss';
+@import 'header.scss';
+@import 'corusel.scss';
+@import 'marquee.scss';
+@import 'promo.scss';
+@import 'main-btn.scss';
+@import 'attention.scss';
+@import 'assortment.scss';
+@import 'guidelines.scss';
+@import 'footer.scss';
+@import 'search.scss';
+@import 'mobile-menu.scss';
+@import 'catalog.scss';
+@import 'titles.scss';
+@import 'promo-device.scss';
+@import 'preview.scss';
+@import 'specif.scss';
+@import 'video.scss';
+@import 'docs.scss';
+@import 'devices';
+@import 'service';
+@import 'location';
+@import 'message.scss';
+@import 'media.scss';
+
+
+
+
+
+
+
+
+
+
+

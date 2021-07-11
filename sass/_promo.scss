@@ -1,0 +1,66 @@
+.promo {
+    position: relative;
+    &__anchor {
+        position: absolute;
+        top: -90px;
+    }
+    &__title {
+        margin-top: 25px;
+        & hr {
+            box-sizing: content-box;
+            border: 0;
+            border-top: 1px solid #eee;
+            clear: both; 
+        }
+    }
+    
+    &__description {
+        color: $text-color;
+        text-align: justify;
+    }
+    &__main-description {
+        padding: 15px;
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+    &__low-description {
+        padding: 15px;
+        line-height: 1.3em;
+    }
+    &__sitelinks {
+        width: 90%;
+        margin: 0 auto;
+        height: 223px;
+        max-height: 80%;
+        border: dotted 3px $main-color;
+        &-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &-link {
+            padding-bottom: 10px;
+            & a {
+                margin-left: 33px;
+                margin-right: 5px;
+                text-decoration: none;
+                color: $main-color;
+                transition: 0.3s all;
+                &:hover {
+                    color: #af5a00;
+                }
+            }
+        }
+    }
+    
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px 0 15px 0;
+    }
+    &__title-main_sitelink {
+        margin: 20px;
+    }
+    
+    
+}

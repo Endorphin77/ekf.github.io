@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EKF</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="tell">
+        <a href="tel: +74954119167"><i class="bi bi-telephone-fill"></i></a>
+    </div>
+    <div class="search">
+        <div class="search__close-box"></div>
+        <div class="container">
+            <div class="row">
+                <div class="search__row">
+                    <div class="search__close"><i class="bi bi-x"></i></div>
+                    <form action="#" id="search__form-id" class="search__form">
+                        <input name="request" required placeholder="Что будем искать?" type="text">
+                        <button class="search__button"><i class="icon-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__crumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="header__top-container">
+                        <ul class="header__left-crumb col-md-5">
+                            <li><a href="#" class="icon-twitter"></a></li>
+                            <li><a href="#" class="icon-facebook"></a></li>
+                            <li><a href="#" class="icon-google"></a></li>
+                            <li><a href="#" class="icon-vk"></a></li>
+                            <li><a href="#" class="icon-youtube"></a></li>
+                        </ul>
+
+                        <div class="header__right-crumb col-md-5">
+                            <a href="catalog.html">Интернет-каталог</a>
+                            <div class="header__button">
+                                <button><i class="icon-search"></i></button>
+                            </div>
+                            <div class="header__button header__button_tel">
+                                <a href="tel: +74954119167"><i class="bi bi-telephone-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="header__top-nav">
+            <div class="container">
+                <div class="row">
+                    
+                    <nav class="header__nav col-md-4 header__nav_left">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index.html#promo">О нас</a></li>
+                            <li class="header__dropdown">
+                                <a href="devices.html">Наши приборы</a>
+                                <ul class="header__dropdown-content">
+                                    <li><a class="" href="biosen.html">BIOSEN_C line</a></li>
+                                    <li><a class="" href="#">Quo-Lab</a></li>
+                                    <li><a class="" href="#">Quo-Test</a></li>
+                                    <li><a class="" href="#">Hemo Control</a></li>
+                                    <li><a class="" href="#">Lactate Scout 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__logo col-md-4">
+                        <a href="index.html"><img src="img/logo-ru.png" alt="logo-ru"></a>
+                    </div>
+                    <nav class="header__nav col-md-4"> 
+                        <ul>
+                            <li><a href="#">Сервис</a></li>
+                            <li><a href="documents.html">Документы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu__close-box"></div>
+        <div class="mobile-menu__container">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html#promo">О нас</a></li>
+                <li class="mobile-menu__dropdown">
+                    <a href="devices.html">Наши приборы</a>
+                    <div class="mobile-menu__plus"><span>+</span></div>
+                    <ul class="mobile-menu__dropdown-content">
+                        <li><a class="" href="#">BIOSEN_C line</a></li>
+                        <li><a class="" href="#">Quo-Lab</a></li>
+                        <li><a class="" href="#">Quo-Test</a></li>
+                        <li><a class="" href="#">Hemo Control</a></li>
+                        <li><a class="" href="#">Lactate Scout 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Сервис</a></li>
+                <li><a href="#">Документы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section class="device">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 device__top">
+                    <div class="title title_xl">
+                        Анализатор глюкозы и лактата Biosen C-Line
+                    </div>
+                    <hr>
+                    <div class="device__img">
+                        <img src="img/Biosen-Glucose-Lactate-analyzer.jfif" alt="BiosenC-line">
+                    </div>
+                </div>
+                <div class="col-xl-4 device__top">
+                    <div class="title title_m">
+                        Ключевые особенности
+                    </div>
+                    <hr>
+                    <div class="device__features">
+                        <p><span><i class="bi bi-check-circle-fill"></i></span>180 результатов в час</p>
+                        <p><span><i class="bi bi-check-circle-fill"></i></span>Чип-сенсор (без мембран!) для удобного и
+                            быстрого применения</p>
+                        <p><span><i class="bi bi-check-circle-fill"></i></span> Встроенная программа контроля качества
+                            cогласно немецким правилам</p>
+                        <p><span><i class="bi bi-check-circle-fill"></i></span> Низкая стоимость одного измерения
+                            благодаря снижению потребления реагентов</p>
+                        <p><span><i class="bi bi-check-circle-fill"></i></span>Компактный дизайн</p>
+                        <p><span><i class="bi bi-check-circle-fill"></i></span>Память 1000 результатов измерения</p>
+                        <p><span><i class="bi bi-check-circle-fill"></i></span>Для применения в клиниках, лабораториях,
+                            спортивной медицине</p>
+                    </div>
+                </div>
+                <div class="col-xl-12 device__manual">
+                    <div class="device__desc">
+                        <div class="col-xl-6 device__desc-row">
+                            <div class="title title_l">
+                                Назначение прибора
+                            </div>
+                            <hr>
+                            <div class="device__desc-text">
+                                BIOSEN C_line предназначен для количественного определения глюкозы и лактата в цельной
+                                крови,
+                                плазме и сыворотке человека. Проба отбирается в капилляр, который помещается в пробирку,
+                                заполненную гемолизирующим буфером, и затем измеряется прибором. Поскольку исследуемый
+                                материал
+                                потенциально инфицирован, отработанные пробирки должны быть обеззаражены согласно
+                                инструкциям,
+                                принятым в вашем учреждении.
+                            </div>
+                            <div class="device__desc-text">
+                                BIOSEN C_line предназначен для использования в профессиональных медицинских учреждениях,
+                                медицинских центрах и клинических лабораториях для подтверждения клинического диагноза
+                                или
+                                использования в спортивной медицине. Взятие крови и работа с прибором BIOSEN C_line
+                                должны
+                                осуществляться персоналом, обученным работе с прибором, имеющим необходимую квалификацию
+                                с
+                                медицинской точки зрения, для проведения in vitro диагностических процедур.
+                            </div>
+                        </div>
+                        <div class="col-xl-6 device__desc-row">
+                            <div class="title title_l">
+                                Принцип измерения
+                            </div>
+                            <hr>
+                            <div class="device__desc-text ">
+                                Определение содержания глюкозы и лактата основывается на электрохимическом методе
+                                анализа с помощью специально разработанных для этих целей чип сенсоров. Проба
+                                автоматически подается в прибор на чип сенсоры. Здесь ?-D-глюкоза и L-лактат,
+                                содержащиеся в пробе, преобразовываются ферментативно с помощью иммобилизированного
+                                фермента глюкозоксидазы / лактатоксидазы. В результате реакции выделяется глюконовая
+                                кислота / пировиноградная кислота и перекись водорода. Перекись водорода регистрируется
+                                электродом. Очень важно, чтобы датчик был откалибрирован раствором с известной
+                                концентрацией. Результатом измерения будет электрический ток, который пропорционален
+                                концентрации глюкозы. Неизвестная концентрация глюкозы рассчитывается относительно
+                                данной калибровки. После каждого анализа чип сенсор очищается автоматически системным
+                                раствором. При этом удаляются остатки пробы. После этого система готова к измерению
+                                следующей пробы.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="title title_l device__manual-title">Варинаты исполнения</div>
+                    <hr>
+                    <div class="device__models">
+                        <div class="col-xl-5">
+                            <div class="device__model">
+                                <div class="title title_m device__model-title">BIOSEN C_line GP+</div>
+                                <hr>
+                                <img src="img/C_line_gp_plus.jpg" alt="GP+">
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="device__model">
+                                <div class="title title_m device__model-title">BIOSEN C_line Clinic</div>
+                                <hr>
+                                <img src="img/C_line_clinic.jpg" alt="Clinic">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="title title_l device__manual-title">
+                        Простое измерение уровня глюкозы и лактата в 3 этапа
+                    </div>
+                    <hr>
+                    <div class="col-xl-12 device__manual-row">
+                        <div class="col-xl-4 device__manual-box">
+                            <img src="img/Biosen-Glucose-Lactate-analyzer-1-step.jpg" alt="">
+                            <div class="device__line"></div>
+                            <p><span> 1.</span> Соберите образец капиллярной крови.</p>
+                        </div>
+                        <div class="col-xl-4 device__manual-box">
+                            <img src="img/Biosen-Glucose-Lactate-analyzer-2-step.jpg" alt="">
+                            <div class="device__line"></div>
+                            <p><span> 2.</span> Поместите капилляр в пробирку и перемешайте.</p>
+                        </div>
+                        <div class="col-xl-4 device__manual-box">
+                            <img src="img/Biosen-Glucose-Lactate-analyzer-3-step.jpg" alt="">
+                            <div class="device__line"></div>
+                            <p><span> 3.</span> Результат через 20-45 секунд. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specif">
+      <div class="container">
+        <div class="row">
+          <div class="title title_l specif__title">Характеристики, возможности и расходники</div>
+          <hr>
+          <div class="specif__container">
+            <div class="col-xl-6 specif__row">
+                <div class="specif__module">
+                    <div class="title title_m">Технические данные</div>
+                    <table class="specif__table specif__table-tech"  cellpadding="5">
+                        <tr>
+                          <td>ПРИНЦИП ИЗМЕРЕНИЯ</td>
+                          <td class="specif__td-left">Энзиматический, амперометрический</td>
+                        </tr>
+                        <tr>
+                        <td>ЭЛЕКТРОДЫ</td>
+                        <td class="specif__td-left">Ферментативный чип-сенсор</td>
+                      </tr>
+                      <tr>
+                        <td>ДИАПАЗОН ИЗМЕРЕНИЯ - ГЛЮКОЗА</td>
+                        <td class="specif__td-left">0.5-50 ммоль/л (9-900 мг/дл)</td>
+                      </tr>
+                      <tr>
+                        <td>ДИАПАЗОН ИЗМЕРЕНИЯ - ЛАКТАТ	</td>
+                        <td class="specif__td-left">0.5-40 ммоль/л (5-360 мг/дл)</td>
+                      </tr>
+                      <tr>
+                        <td>КОЭФФИЦИЕНТ ВАРИАЦИЙ</td>
+                        <td class="specif__td-left">1,5 % при 12 ммоль/л</td>
+                      </tr>
+                      <tr>
+                        <td>СТАБИЛЬНОСТЬ / ДРЕЙФ</td>
+                        <td class="specif__td-left">3 % при 10 измерении, относительно 12 ммоль/л</td>
+                      </tr>
+                      <tr>
+                        <td>СРОК СЛУЖБЫ СЕНСОРА - ГЛЮКОЗА</td>
+                        <td class="specif__td-left">Не более 90 дней или 10000 проб</td>
+                      </tr>
+                      <tr>
+                        <td>СРОК СЛУЖБЫ СЕНСОРА - ЛАКТАТ	</td>
+                        <td class="specif__td-left">Не более 60 дней или 10000 проб</td>
+                      </tr>
+                      <tr>
+                        <td>ИЗМЕРЯЕМЫЙ МАТЕРИАЛ (ТИП ПРОБЫ)</td>
+                        <td class="specif__td-left">Кровь, плазма или сыворотка</td>
+                      </tr>
+                      <tr>
+                        <td>ОБЪЕМ ПРОБЫ</td>
+                        <td class="specif__td-left">20 мкл (10 мкл)</td>
+                      </tr>
+                      <tr>
+                        <td>ОБЪЕМ ПРОБИРКИ</td>
+                        <td class="specif__td-left">2,0 мл (1,5 мл)</td>
+                      </tr>
+                      <tr>
+                        <td>ЯЗЫКИ</td>
+                        <td class="specif__td-left">Немецкий, Английский, Русский, Испанский, Французский, Польский. Другие языки по запросу</td>
+                      </tr>
+                      <tr>
+                        <td>РАБОЧИЙ ДИАПАЗОН ТЕМПЕРАТУР</td>
+                        <td class="specif__td-left">От +15 до +35 °C, Сигнализация при выходе температур за рабочие пределы (15-35°С)</td>
+                      </tr>
+                      <tr>
+                        <td>ВЛАЖНОСТЬ</td>
+                        <td class="specif__td-left">20 - 85 %</td>
+                      </tr>
+                      <tr>
+                        <td>ЭЛЕКТРОПИТАНИЕ</td>
+                        <td class="specif__td-left">100 - 250 В / 50 - 60 Гц</td>
+                      </tr>
+                      <tr>
+                        <td>ПОТРЕБЛЯЕМАЯ МОЩНОСТЬ</td>
+                        <td class="specif__td-left">30 В</td>
+                      </tr>
+                      <tr>
+                        <td>РАЗМЕРЫ (ДXШXВ)</td>
+                        <td class="specif__td-left">280 x 280 x 95 мм</td>
+                      </tr>
+                      <tr>
+                        <td>ВЕС</td>
+                        <td class="specif__td-left">Прибл. 3 - 5 кг</td>
+                      </tr>
+                      <tr>
+                        <td>РЕЖИМЫ КАЛИБРОВКИ</td>
+                        <td class="specif__td-left">Автоматическая, принудительная, экономичная</td>
+                      </tr>
+                      <tr>
+                        <td>ПРИНТЕР</td>
+                        <td class="specif__td-left">RS 232 C (V.24)</td>
+                      </tr>
+                      <tr>
+                        <td>ДИСПЛЕЙ / КЛАВИАТУРА</td>
+                        <td class="specif__td-left">Графический / сенсорный ( 320 x 240 точек),Алфовитно/цифровая</td>
+                      </tr>
+                      <tr>
+                        <td>ПАМЯТЬ</td>
+                        <td class="specif__td-left">1000 результатов измерения</td>
+                      </tr>
+                    </table>
+                </div>
+                <div class="specif__module">
+                    <div class="title title_m">Комплектация</div>
+                    <table class="specif__table specif__table-average"  cellpadding="5">
+                        <tr class="">
+                            <th class="specif__td-big">&ensp;</>
+                            <th colspan="2" class="specif__td-average">GP+</th>
+                            <th colspan="2" class="specif__td-average">Clinic</th>
+                        </tr>
+                        <tr class="specif__tr-rot">
+                            <td class="specif__td-big">&ensp;</td>
+                            <td class="specif__td-small">Станд.</td>
+                            <td class="specif__td-small">Возможн.</td>
+                            <td class="specif__td-small">Станд.</td>
+                            <td class="specif__td-small">Возможн.</td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">КОНТРОЛЬ КАЧЕСТВА</td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">СНИЖЕННОЕ ПОТРЕБЛЕНИЕ РЕАКТИВОВ</td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">ПАМЯТЬ НА 1000 РЕЗУЛЬТАТОВ ИЗМЕРЕНИЯ</td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">ГРАФИЧЕСКИЙ / СЕНСОРНЫЙ ДИСПЛЕЙ</td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">АВТОМАТИЧЕСКОЕ РАСПОЗНАВАНИЕ ПРОБЫ</td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">ШТРИХОВОЙ КОД (BARCODE)</td>
+                            <td class="specif__td-small"><i class="bi bi-x"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-x"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">ВОЗМОЖНОСТЬ РАБОТЫ В ПОЛЕ (ПРИ ИСПОЛЬЗОВАНИИ ИНВЕНТОРА)</td>
+                            <td class="specif__td-small"><i class="bi bi-x"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-x"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">ПАРАМЕТР - ГЛЮКОЗА</td>
+                            <td class="specif__td-small"><i class="bi bi-x"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-x"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">ПАРАМЕТР - ЛАКТАТ</td>
+                            <td class="specif__td-small"><i class="bi bi-x"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-x"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">СРОЧНЫЕ ПРОБЫ STAT</td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">ОТДЕЛЬНЫЕ ПОЗИЦИИ ДЛЯ СРОЧНЫХ ПРОБ, КОТРОЛЕЙ И СТАНДАРТОВ	</td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                            <td class="specif__td-small"><i class="bi bi-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">КОЛИЧЕСТВО ПРОБ</td>
+                            <td class="specif__td-small">5</td>
+                            <td class="specif__td-small">-</td>
+                            <td class="specif__td-small">20</td>
+                            <td class="specif__td-small">-</td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">ПРОИЗВОДИТЕЛЬНОСТЬ (РЕЗУЛЬТАТОВ В ЧАС)</td>
+                            <td class="specif__td-small">прибл. 120	</td>
+                            <td class="specif__td-small">-</td>
+                            <td class="specif__td-small">прибл. 180</i></td>
+                            <td class="specif__td-small">-</td>
+                        </tr>
+                        <tr>
+                            <td class="specif__td-big">РЕЖИМЫ КАЛИБРОВКИ</td>
+                            <td class="specif__td-small">3</i></td>
+                            <td class="specif__td-small">-</td>
+                            <td class="specif__td-small">3</i></td>
+                            <td class="specif__td-small">-</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-xl-6 specif__row">
+              <div class="specif__module">
+                  <div class="title title_m">Каталожные номера</div>
+                  <table class="specif__table specif__table-equip"  cellpadding="5">
+                      <tr>
+                        <th colspan="2">BIOSEN C_LINE GP+</th>
+                      </tr>
+                      <tr>
+                      <td>BIOSEN C_LINE GP+, 1 КАНАЛ</td>
+                      <td class="specif__td-left">5213-0051-6200</td>
+                    </tr>
+                    <tr>
+                      <td>BIOSEN C_LINE GP+, 2 КАНАЛА</td>
+                      <td class="specif__td-left">5213-0121-6200</td>
+                    </tr>
+                    <tr>
+                      <td>BIOSEN C_LINE GP+, 2 КАНАЛА, БАРКОДРИДЕР</td>
+                      <td class="specif__td-left">5213-0121-6202</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">BIOSEN C_LINE CLINIC</th>
+                    </tr>
+                    <tr>
+                      <td>BIOSEN C_LINE CLINIC, 1 КАНАЛ</td>
+                      <td class="specif__td-left">5214-0051-2200</td>
+                    </tr>
+                    <tr>
+                      <td>BIOSEN C_LINE CLINIC, 2 КАНАЛА</td>
+                      <td class="specif__td-left">5214-0121-2200</td>
+                    </tr>
+                    <tr>
+                      <td>BIOSEN C_LINE CLINIC, 2 КАНАЛА, БАРКОДРИДЕР</td>
+                      <td class="specif__td-left">5214-0121-2202</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">СЕНСОРЫ</th>
+                    </tr>
+                    <tr>
+                      <td>ЧИП-СЕНСОР ГЛЮКОЗА (TYPE II)</td>
+                      <td class="specif__td-left">5206-3011</td>
+                    </tr>
+                    <tr>
+                      <td>ЧИП-СЕНСОР ЛАКТАТ (TYPE II)</td>
+                      <td class="specif__td-left">5206-3029</td>
+                    </tr>
+                    <tr>
+                      <td>ЗАГЛУШКА ДЛЯ БЛОКА СЕНСОРА</td>
+                      <td class="specif__td-left">5206-3135</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">РАСТВОРЫ</th>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР МУЛЬТИ-СТАНДАРТ, 2МЛ, 50 ШТ.</td>
+                      <td class="specif__td-left">5211-3015</td>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР МУЛЬТИ-СТАНДАРТ, 2МЛ, 100 ШТ.</td>
+                      <td class="specif__td-left">5211-3017</td>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР ГЛЮКОЗА/ЛАКТАТ СИСТЕМНЫЙ 500 МЛ.</td>
+                      <td class="specif__td-left">0201-0002-025</td>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР ГЛЮКОЗА/ЛАКТАТ СИСТЕМНЫЙ 2,500 МЛ.</td>
+                      <td class="specif__td-left">0201-0002-024</td>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР ГЛЮКОЗА/ЛАКТАТ СИСТЕМНЫЙ 5,000 МЛ.</td>
+                      <td class="specif__td-left">0201-0002-026</td>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР ГЛЮКОЗА/ЛАКТАТ ГЕМОЛИЗИРУЮЩИЙ 5,000 МЛ.</td>
+                      <td class="specif__td-left">0209-0100-050</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">КОНТРОЛЬНЫЕ МАТЕРИАЛЫ</th>
+                    </tr>
+                    <tr>
+                      <td>READYCON NORM, 1МЛ, 25 ШТ.</td>
+                      <td class="specif__td-left">5130-6152</td>
+                    </tr>
+                    <tr>
+                      <td>READYCON PAT, 1МЛ, 20 ШТ.</td>
+                      <td class="specif__td-left">5130-6162</td>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР СЕНСОРА ГЛЮКОЗА/ЛАКТАТ ПРОВЕРОЧНЫЙ 1,5 МЛ., 20 ШТ.</td>
+                      <td class="specif__td-left">5130-6055</td>
+                    </tr>
+                    <tr>
+                      <td>ЛИНЕЙНЫЙ ТЕСТ ГЛЮКОЗА/ЛАКТАТ (2 ММОЛЬ/Л, 7 ММОЛЬ/Л, 18 ММОЛЬ/Л) 3 ШТ.</td>
+                      <td class="specif__td-left">0209-0102-391</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">ГОТОВЫЕ НАБОРЫ</th>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР ГЛЮКОЗА/ЛАКТАТ ГЕМОЛИЗИРУЮЩИЙ (С КАПИЛЛЯРАМИ 20 МКЛ. В МИКРОПРОБИРКАХ) 1Х1,000 ШТ.</td>
+                      <td class="specif__td-left">0209-0100-012</td>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР ГЛЮКОЗА/ЛАКТАТ ГЕМОЛИЗИРУЮЩИЙ (С КАПИЛЛЯРАМИ 20 МКЛ. В МИКРОПРОБИРКАХ) 5Х200 ШТ.</td>
+                      <td class="specif__td-left">0209-0100-014</td>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР ГЛЮКОЗА/ЛАКТАТ ГЕМОЛИЗИРУЮЩИЙ (В МИКРОПРОБИРКАХ) 1,000 ШТ.</td>
+                      <td class="specif__td-left">0209-0100-122</td>
+                    </tr>
+                    <tr>
+                      <td>РАСТВОР ГЛЮКОЗА/ЛАКТАТ ГЕМОЛИЗИРУЮЩИЙ (С КАПИЛЛЯРАМИ 10 МКЛ. В МИКРОПРОБИРКАХ) 1,000 ШТ.</td>
+                      <td class="specif__td-left">0209-0100-005</td>
+                    </tr>
+                    <tr>
+                      <td>ДЕРЖАТЕЛЬ ДЛЯ КАПИЛЛЯРОВ 1 ШТ.</td>
+                      <td class="specif__td-left">0901-0200-002</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">ЧИСТЯЩИЕ РАСТВОРЫ</th>
+                    </tr>
+                    <tr>
+                      <td>ДЕЗИНФИЦИРУЮЩИЙ РАСТВОР, 75 МКЛ, 5 ШТ.</td>
+                      <td class="specif__td-left">0201-0003-001</td>
+                    </tr>
+                    <tr>
+                      <td>МОЮЩИЙ РАСТВОР/ДЕПРОТЕИНИЗАТОР, 30 МКЛ, 5 ШТ.</td>
+                      <td class="specif__td-left">0201-0004-001</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">ПРОБИРКИ И КАПИЛЛЯРЫ</th>
+                    </tr>
+                    <tr>
+                      <td>ПРОБИРКИ EKF SAFECUPS, 2 МЛ, 1000 ШТ.</td>
+                      <td class="specif__td-left">8200-0011-0034</td>
+                    </tr>
+                    <tr>
+                      <td>ПЛАСТИКОВЫЕ КАПИЛЛЯРЫ НАТРИЙ-ГЕПАРИН, END-TO-END, (10Х100), 20 МКЛ, 1000 ШТ.</td>
+                      <td class="specif__td-left">7111-0011-20H</td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="attention attention_specif">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="attention__row">
+                                <div class="attention__work-schedule">
+                                    Обратите внимание:
+                                </div>
+                                <div class="attention__work-text">
+                                  Баркодридер встраивается на заводе и отдельно не поставляется!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>        
+    </section>
+
+    <section class="video">
+      <div class="container">
+        <div class="row">
+          
+          <div class="video__row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+              <div class="title title_l">Презентация BIOSEN_C line</div>
+              <iframe class="video__player" src="https://www.youtube.com/embed/2qJOh401_SI?list=PLjSux7mBRyblABUSIo91mVZTbZXBKw29O" title="Презентация BIOSEN_C line" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-xl-5">
+              <div class="title title_l">Разрешительные документы</div>
+              <div class="video__docks">
+                <div class="video__dock-title">СЕРТИФИКАТЫ СООТВЕТСТВИЯ</div>
+                <a href="#" class="video__dock">
+                  <div class="video__dock-text">
+                    <span>24.07.2017</span>
+                  <img src="icons/pdf.svg" alt="PDF">
+                  <h4>ПИСЬМО РАЗЯСНЕНИЕ ФАС</h4>
+                  </div>
+                  <div class="video__dock-text">
+                    <p>«О наличии свидетельства об утверждении типа средств измерений анализаторов глюкозы и лактата BIOSEN C_Line, S_Line»</p>
+                  </div>
+                </a>
+                <div class="video__dock-title">РЕГИСТРАЦИОННОЕ УДОСТОВЕРЕНИЕ</div>
+                <a href="#" class="video__dock">
+                  <div class="video__dock-text">
+                    <span>21.08.2015</span>
+                  <img src="icons/pdf.svg" alt="PDF">
+                  <h4>№ РЗН 2015/2973</h4>
+                  </div>
+                  <div class="video__dock-text">
+                    <p>«Регистрационное удостоверение BIOSEN C_Line, S_Line»</p>
+                  </div>
+                </a>
+                <a href="#" class="video__dock">
+                  <div class="video__dock-text">
+                    <span>20.07.2010</span>
+                  <img src="icons/pdf.svg" alt="PDF">
+                  <h4>№ ФСЗ 2010/07433</h4>
+                  </div>
+                  <div class="video__dock-text">
+                    <p>«Регистрационное удостоверение на расходные материалы к анализаторам BIOSEN C_Line, S_Line»</p>
+                  </div>
+                </a>
+              </div>
+              <div class="main-btn main-btn_docks">
+                <a href="#">Другие документы &nbsp
+                    <i class="bi bi-forward-fill"></i>
+                </a>
+            </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footer__boxes">
+                    <div class="col-md-3">
+                        <div class="title title_m">
+                            Быстрые ссылки
+                        </div>
+                        <div class="footer__boxes-links">
+                            <a class="" href="#">BIOSEN_C line</a>
+                            <a class="" href="#">Quo-Lab</a>
+                            <a class="" href="#">Quo-Test</a>
+                            <a class="" href="#">Hemo Control</a>
+                            <a class="" href="#">Lactate Scout 4</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title title_m">
+                            Служба поддержки
+                        </div>
+                        <div class="footer__boxes-links">
+                            <a href="#">Карта сайта</a>
+                            <a href="#">Сервис</a>
+                            <a href="#">Свяжитесь с нами</a>
+                            <a href="#">Как добраться</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="title title_m">
+                            Мы на связи
+                        </div>
+                        <div class="footer__boxes-links">
+                            <p><i class="bi bi-flag-fill"></i> Адрес: 117648, Москва, Северное
+                                Чертаново, дом 2, корпус 207.</p>
+                            <p><i class="bi bi-telephone-fill"></i> Телефон: +7 495 411 91 67</p>
+                            <p><i class="bi bi-envelope-fill"></i> Email: info@ekf.ru</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer__boxes-logo">
+                        <img src="img/logo-ru-white.png" alt="">
+                        <div class="footer__boxes-text">
+                            Обратите внимание: НЕОБХОДИМ ТЕКСТ ДЛЯ СОХРАНЕНИЯ ЦЕЛОСТНОСТИ ДИЗАЙНА.
+                        </div>
+                    </div>
+                </div>
+                <img src="img/logo-ru-white.png" alt="" class="footer__mobile-logo">
+                <!--div class="footer__crumbs">
+                    <a href="#">Конфиденциальность</a> |
+                    <a href="#">Положения и условия</a> |
+                    <a href="#">Условия продажи</a> |
+                    <a href="#">Закон Великобритании о современном рабстве</a>
+                </div-->
+                <div class="footer__copyright">
+                    ЕКФ Диагностика | Продажа медицинского оборудования для лабораторий, Москва 2021
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
